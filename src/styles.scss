@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #120B35;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 140px;
+}
+
+:root {
+    --orange-text-color: #E15544;
+    --mint-text-color: #02F4BF;
 }
