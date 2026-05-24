@@ -1,11 +1,13 @@
 .header {
     color: var(--orange-text-color);
     width: 100%;
+    height: 92px;
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(180deg, #0B042D, #0B042D33 20%);
 }
 
 .left-header-area {
@@ -14,17 +16,20 @@
     gap: 40px;
 }
 
-.header-translation-button {
+.header-translation-buttons {
     display: flex; 
     gap: 8px;
+}
+
+.translation-button {
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
     border: none;
     background: none;
     color: var(--orange-text-color);
-}
 
-.header-translation-button:hover {
-    color: var(--mint-texrt-color);;
+    &:hover {
+        color: var(--mint-text-color);
+    }
 }

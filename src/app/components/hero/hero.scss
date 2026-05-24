@@ -1,0 +1,80 @@
+.hero {
+    display: flex;
+    height: 554px;
+}
+
+.left-hero-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.buttons-and-arrows {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-button-contact {
+    all: unset;
+    cursor: pointer;
+    color: var(--orange-text-color);
+    border: solid 1px var(--mint-text-color);
+    padding: 10px;
+    transform: rotate(-90deg);
+    transition: ease-in 0.3s;
+
+    &:hover {
+        color: var(--mint-text-color);
+    }
+}
+
+.hero-button-whyMe {
+    all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #333333; 
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #0076ff;
+    
+    .arrow-icon {
+      transform: translateX(4px);
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.arrow-icon {
+  width: 50px;
+  height: 22px;
+  
+  transition: transform 0.2s ease-in-out;
+}
+
+.name-and-slogan {
+    color: var(--mint-text-color);
+
+    h2 {
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 120%;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 120%;
+    }
+}
+
+.profil-image {
+    width: 40%;
+    background: url('../../../../public/img/hero/hero-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
