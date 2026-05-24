@@ -3,4 +3,10 @@
     gap: 20px;
     font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
+    color: var(--orange-text-color) !important;
+}
+
+a:hover  {
+    color: var(--mint-text-color);
 }

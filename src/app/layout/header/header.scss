@@ -3,4 +3,28 @@
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-header-area {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-translation-button {
+    display: flex; 
+    gap: 8px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color: var(--orange-text-color);
+}
+
+.header-translation-button:hover {
+    color: var(--mint-texrt-color);;
 }
