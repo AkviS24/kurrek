@@ -1,6 +1,11 @@
 .hero {
     display: flex;
+    height: calc(100vh - 80px);
+    position: relative;
+    width: 1284px;
     height: 554px;
+    left: -53px;
+    top: 94px;
 }
 
 .left-hero-area {
@@ -19,11 +24,23 @@
 .hero-button-contact {
     all: unset;
     cursor: pointer;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    width: 169px;
+    height: 52px;
+    top: 147px;
+    left: 50px;
+
     color: var(--orange-text-color);
     border: solid 1px var(--mint-text-color);
     padding: 10px;
-    transform: rotate(-90deg);
-    transition: ease-in 0.3s;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: color ease-in 0.3s;
 
     &:hover {
         color: var(--mint-text-color);
@@ -32,49 +49,59 @@
 
 .hero-button-whyMe {
     all: unset;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  color: #333333; 
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: #0076ff;
-    
-  }
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .arrow-icon {
-  width: 50px;
-  height: 22px;
-  transition: transform 0.2s ease-in-out;
-  transform: translateY(65px) rotate(90deg);
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 256px;
+    left: 647px;
+    transform: rotate(180deg);
+    stroke: var(--orange-text-color);
+    transition: transform 0.2s ease-in-out, stroke 0.3s ease;
 
-  &:hover {
-    color: var(--mint-text-color);
-  }
+    &:hover {
+        stroke: var(--mint-text-color);
+        border: solid 1px var(--mint-text-color);
+    }
 }
 
 .name-and-slogan {
     color: var(--mint-text-color);
+    position: absolute;
+    top: 412px;
+    left: 50px;
+    width: 808px;
+    height: auto;
+    max-height: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
     h2 {
         font-weight: 500;
         font-size: 54px;
-        line-height: 120%;
+        line-height: 1.2;
+        margin: 0;
     }
 
     p {
         font-weight: 700;
         font-size: 82px;
-        line-height: 120%;
+        line-height: 1.2;
+        margin: 0;
     }
 }
 
 .profil-image {
-    width: 40%;
-    background: url('../../../../public/img/hero/hero-image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: absolute;
+    left: 796px;
+    width: 539px;
+    height: 554px;
+    object-fit: cover; 
+    object-position: center;
 }
