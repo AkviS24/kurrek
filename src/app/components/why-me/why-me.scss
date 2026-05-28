@@ -1,0 +1,41 @@
+.why-me {
+    position: absolute;
+    margin-top: 92px;
+    top: 754px;
+    left: 105px;
+    width: 1224px;
+    height: auto;
+    max-height: 453px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    box-sizing: border-box;
+}
+
+.whyMe-image {
+    width: 490px;
+    height: 452px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.why-me-text {
+    width: 729px;
+    height: 452px;
+}
+
+.text {
+    color: var(--mint-text-color);
+    text-align: right;
+
+    h2 {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 524px;
+        height: 53px;
+        flex-shrink: 0;
+    }
+}
