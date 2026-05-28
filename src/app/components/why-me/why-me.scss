@@ -1,8 +1,5 @@
 .why-me {
-    position: absolute;
-    margin-top: 92px;
-    top: 754px;
-    left: 105px;
+    margin-top: 192px;
     width: 1224px;
     height: auto;
     max-height: 453px;
@@ -13,29 +10,113 @@
 }
 
 .whyMe-image {
-    width: 490px;
+    width: 488px;
     height: 452px;
-    flex-shrink: 0;
-    object-fit: cover;
-    object-position: center;
 }
 
 .why-me-text {
     width: 729px;
     height: 452px;
+    text-align: right;
+}
+
+.headline {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    position: relative;
+    left: 406px;
+}
+
+.text-content {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    margin-top: 18px;
+    transform: translateX(52px);
 }
 
 .text {
     color: var(--mint-text-color);
-    text-align: right;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    width: 685px;
+    height: 84px;
+    box-sizing: border-box;
+}
 
-    h2 {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        width: 524px;
-        height: 53px;
-        flex-shrink: 0;
+h2 {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: right;
+    color: var(--orange-text-color);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-style: bold;
+    line-height: 1.2;
+    font-size: 54px;
+    gap: 10px;
+    width: 524px;
+    height: 53px;
+    flex-shrink: 0;
+}
+
+.icons {
+    width: 568px;
+    height: 186px;
+    display: flex;
+    margin-top: 80px;
+    border: solid 1px var(--orange-text-color);
+    position: relative;
+    left: 159px;
+}
+
+.icon-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 235px;
+    height: 57px;
+
+    & img {
+        width: 33.31px;
+        height: 41px;
+        margin-top: 8px;
     }
+
+    & p {
+        color: var(--mint-text-color);
+    }
+}
+
+.icon-first-row {
+    display: flex;
+    width: 568px;
+    height: 56px;
+    gap: 64px;
+    margin: 8px;
+
+
+    h3{
+        color: var(--orange-text-color);
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+        font-style: bold;
+        line-height: 1.2;
+        font-size: 48px;
+    }
+}
+
+.icon-second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 568px;
+    height: 56px;
+    margin-top: 26px;
+    gap: 64px;
 }
